@@ -13,4 +13,4 @@ The user will be able to search for a location and choose from recently searched
 ## Links:
 
 Weather api used:
-* 
+* OpenWeather API
