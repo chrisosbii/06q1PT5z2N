@@ -34,17 +34,30 @@
         <div class="w-25 p-2">
             <h2 class="text-left ">Search for a City:</h2>
             <div class="input-group mb-3">
-                <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                <input id="citySearch" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
             </div>
             <!-- search button -->
-            <button type="button" class="btn btn-primary btn-lg w-100 mb-3">Search</button>
+            <button type="button" class="btn btn-primary btn-lg w-100 mb-3" onclick="search()">Search</button>
             <!-- saved searches -->
             <div class="container-fluid px-5 border-5 border-top border-dark" id="pastSearches">
             </div>
         </div>
         <!-- Weather Area -->
-        <div class="w-75">
-            
+        <div class="w-70">
+          <div class="card border-5 border-dark text-left" id="currentWeatherCard">
+            <div class="card-body">
+              <h2 class="card-title" id="current"></h2>
+              <p class="card-text"></p>
+              <p class="card-text"></p>
+              <p class="card-text"></p>
+            </div>
+          </div>
+          <div class="w-75">
+            <h3>5-Day Forecast:</h3>
+            <div class="container-fluid" id="forcastWeatherCards">
+
+            </div>
+          </div>
         </div>
     </div>
 
